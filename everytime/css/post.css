@@ -1,0 +1,42 @@
+.write {
+  border: 2px solid lightgray;
+  width: 780px;
+  padding: 15px;
+}
+.write_header {
+  font-size: 16px;
+  color: #292929;
+  font-weight: bold;
+  border-bottom: 1px solid lightgray;
+  padding: 0 15px 15px 15px;
+  margin-top: 0;
+}
+/*글 작성 부분*/
+textarea {
+  width: 100%;
+  border: 0;
+  height: 350px;
+  color: #292929;
+  font-size: 14px;
+}
+.write p {
+  border-bottom: 1px solid #e3e3e3;
+  margin-top: 0;
+}
+.write_img {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+}
+.write_bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.write_check {
+  display: inline-flex;
+  align-items: center;
+}
+#check {
+  width: 40px;
+  height: 40px;
+}

@@ -21,7 +21,6 @@ header {
   width: 1880px;
   padding: 0;
   margin: 0 260px 0 260px;
-  justify-content: center;
 }
 .header_evr {
   font-size: 12px;
@@ -52,13 +51,14 @@ header {
   margin: 20px 5px 20px 5px;
 }
 .header_text {
-  margin: 0 auto;
-  justify-content: center;
-  text-align: center;
   font-size: 16px;
-  padding: 30px;
   display: flex;
   gap: 17px;
+  height: 50px;
+  padding-top: 36px;
+}
+.header_text span {
+  border-bottom: 5px solid red;
 }
 
 /*네비게이션 부분*/
@@ -78,7 +78,7 @@ nav {
   height: 200px;
   display: inline-block;
   margin-right: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .menu {
   list-style: none;
@@ -95,7 +95,7 @@ nav {
   list-style: none;
   font-size: 13px;
   margin: 0;
-  padding: 0 30px 0 30px;
+  padding: 0 60px 0 60px;
   display: inline-block;
 }
 
@@ -120,6 +120,11 @@ section {
   flex-direction: column;
   font-size: 12px;
   color: #666;
+}
+.post_hot,
+.post_que {
+  display: flex;
+  align-items: center;
 }
 
 #img_hot,
@@ -180,7 +185,11 @@ section {
   color: #a6a6a6;
   padding: 10px 10px 10px 0;
 }
-
+.bottom_1,
+.bottom_2 {
+  width: 12px;
+  height: 12px;
+}
 /*사이드바*/
 aside {
   display: block;
