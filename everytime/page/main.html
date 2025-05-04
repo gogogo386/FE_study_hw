@@ -3,48 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>에브리타임 비밀 게시판</title>
+    <title>에브리타임 메인 페이지</title>
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
+    <!--헤더 모바일 부분-->
+    <div class="mobile-header">
+      <div id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="header_media">비밀게시판</div>
+    </div>
     <!--헤더 부분-->
     <header>
       <div class="header_wrap">
-        <img id="logo" src="../img/nav.logo.png" alt="에타 아이콘" />
-        <p><!-- p 하니깐 밑으로 내려감-->
-          <span class="header_evr"><b>에브리타임</b></span>
-          <span class="header_school">덕성여대</span>
-        </p>
-        <div class="header_text">
-          <span style="color: red;"><b>게시판</b></span>
-          <b>시간표</b>
-          <b>강의실</b>
-          <b>학점계산기</b>
-          <b>친구</b>
-          <b>책방</b>
-          <b>캠퍼스픽</b>
+        <div style="display: flex;">
+            <img id="logo" src="../img/nav.logo.png" alt="에타 아이콘" />
+            <p>
+            <!-- p 하니깐 밑으로 내려감-->
+            <span class="header_evr"><b>에브리타임</b></span>
+            <span class="header_school">덕성여대</span>
+            </p>
         </div>
-        
-        <class="header_img">
-          <img
-            id="chat"
-            src="../img/icn_m_chat_gray800_light.png"
-            alt="채팅 아이콘"
-          />
-          <img
-            id="people"
-            src="../img/icn_m_account_gray800_light.png"
-            alt="사람 아이콘"
+      
+      <div class="header_text">
+        <span style="color: red"><b>게시판</b></span>
+        <b>시간표</b>
+        <b>강의실</b>
+        <b>학점계산기</b>
+        <b>친구</b>
+        <b>책방</b>
+        <b>캠퍼스픽</b>
+      </div>
+
+      <div class="header_img">
+        <img
+          id="chat"
+          src="../img/icn_m_chat_gray800_light.png"
+          alt="채팅 아이콘"
+        />
+        <img
+          id="people"
+          src="../img/icn_m_account_gray800_light.png"
+          alt="사람 아이콘"
         />
       </div>
     </header>
-<!--네비게이션 부분 -->
+    <!--네비게이션 부분 -->
     <nav>
       <div class="nav_wrap">
         <div class="nav_line"></div>
         <ul class="menu">
           <li>자유게시판</li>
-          <li style="color: red;">비밀게시판</li>
+          <li style="color: red">비밀게시판</li>
           <li>질문게시판</li>
           <li>졸업생게시판</li>
           <li>새내기게시판</li>
@@ -52,15 +65,77 @@
           <li>정보게시판</li>
           <li>이벤트게시판</li>
         </ul>
-     
-      <ul class="menu_1">
+
+        <ul class="menu_1">
+          <li>홍보게시판</li>
+          <li>동아리학회</li>
+        </ul>
+        <div class="nav_line"></div>
+
+        <ul class="menu">
+          <li>취업 진로</li>
+          <li>⭐👨‍🏫교직이수👨‍🏫⭐</li>
+          <li>덕성 예비공무원들♡</li>
+          <li>대학원 뿌숭뿌슝🔥🔥</li>
+          <li>미래의 회계사(CPA)</li>
+          <li>덕성 로스쿨러들 📚</li>
+        </ul>
+        <div class="nav_line"></div>
+        <ul class="menu">
+            <li>총학생회</li>
+            <li>신문사</li>
+            <li>영자신문사</li>
+            <li>운현방송국</li>
+            <li>대학일자리본부</li>
+            <li>교지편집위원회</li>
+            <li>과학기술대학 학생회</li>
+            <li style="color: red;"><b>더 보기</b></li>
+          </ul>
+          <div class="nav_line"></div>
+          <ul class="menu">
+            <li>📑덕성여대 경영학..</li>
+            <li>👩‍💻디지털소프트웨어...</li>
+            <li>국제통상학과</li>
+            <li>💰두드리는 회계학..</li>
+            <li>✍️열공하는 약대생...</li>
+            <li>🌚덕성 법학도🌚</li>
+            <li>🧠심리학과 자게🧠</li>
+            <li style="color: red;"><b>더 보기</b></li>
+          </ul>
+          <div class="nav_line"></div>
+          <ul class="menu">
+            <li>덕성여대 장터</li>
+            <li>뻔선뻔후 찾기 프...</li>
+            <li>덕성 연애방</li>
+            <li>♡덕성여대 기숙사♡</li>
+            <li>주의 없는 게시판</li>
+            <li>덕성여대 자취생 모임</li>
+            <li>퀴어이기 전에 여성</li>
+            <li>덕성여대~수유역 맛...</li>
+          </ul>
+        </div>
+    </nav>
+    <!--모바일 네비게이션-->
+    <div class="nav_media">
+      <div class="nav_line_media"></div>
+      <ul class="menu_media">
+        <li>자유게시판</li>
+        <li style="color: red">비밀게시판</li>
+        <li>질문게시판</li>
+        <li>졸업생게시판</li>
+        <li>새내기게시판</li>
+        <li>시사 이슈</li>
+        <li>정보게시판</li>
+        <li>이벤트게시판</li>
+      </ul>
+
+      <ul class="menu_media_1">
         <li>홍보게시판</li>
         <li>동아리학회</li>
-
       </ul>
-      <div class="nav_line"></div>
+      <div class="nav_line_media"></div>
 
-      <ul class="menu">
+      <ul class="menu_media">
         <li>취업 진로</li>
         <li>⭐👨‍🏫교직이수👨‍🏫⭐</li>
         <li>덕성 예비공무원들♡</li>
@@ -68,10 +143,8 @@
         <li>미래의 회계사(CPA)</li>
         <li>덕성 로스쿨러들 📚</li>
       </ul>
-      <div class="nav_line"></div>
-   
-      </div>
-    </nav>
+    
+    </div>
     <!--섹션 부분-->
     <div class="container">
       <section>
@@ -80,50 +153,85 @@
         </div>
         <!--핫게랑 질문글-->
         <div class="sec_menu">
-          <div class="post hot">
-            <img id="img_hot" src="../img/icn_mcr_board_question_light.png" alt="질문 글 이미지">
+          <div class="post_hot">
+            <img
+              id="img_hot"
+              src="../img/icn_mcr_board_question_light.png"
+              alt="질문 글 이미지"
+            />
             <span class="sec_hot">아기사자 되는 법 아르켜줄게</span>
           </div>
-          <div class="post que">
-            <img id ="img_que" src="../img/icn_mcr_board_hotarticle_light.png" alt="핫게 글 이미지">
+          <div class="post_que">
+            <img
+              id="img_que"
+              src="../img/icn_mcr_board_hotarticle_light.png"
+              alt="핫게 글 이미지"
+            />
             <span class="sec_que">
               멋사 13기 합격 썰 푼다ㅎㅎ
-              <img id="img_vote" src="../img/container.articles.vote.png" alt="따봉 이미지">
-              <span style="color: red;">13</span>
+              <img
+                id="img_vote"
+                src="../img/container.articles.vote.png"
+                alt="따봉 이미지"
+              />
+              <span style="color: red">13</span>
             </span>
           </div>
         </div>
         <!--새글 작성 부분-->
         <div class="new_post">
-          <span class="new_post_text">새 글을 작성해주세요!</span>
-          <img id="new_img" src="/img/container.write.background.png" alt="">
+          <button class="new_post_button">
+            <span>새 글을 작성해주세요!</span>
+            <img class="new_post_img" src="../img/container.write.background.png" alt="연필 이미지" />
+          </button>
         </div>
         <!--아티클 작성 부분-->
         <div class="article">
           <span>
             <h4>멋사 합격 실화냐?</h4>
             <span class="article_1">가슴이 웅장해진다....</span>
-            <br>
-            <p class="article_bottom">4분 전 ㅣ 익명</p>
+            <br />
+            <p class="article_bottom">
+              <img class="bottom_1" src="../img/container.articles.vote.png" alt="따봉봉">
+              <span style="color: red;">10</span>
+              <img class="bottom_2" src="../img/container.articles.comment.png" alt="댓글">
+              <span style="color: #05bcbc;">5</span>
+               ㅣ4분 전ㅣ익명
+            </p>
           </span>
+          <img class="art_img" src="../img/likelion.png" alt="멋사 이미지">
         </div>
         <!--두번째 아티클-->
         <div class="article">
           <span>
             <h4>너가 감히?</h4>
             <span class="article_1">너가 감히 개강을 해?</span>
-            <br>
-            <p class="article_bottom">5분 전 ㅣ 익명</p>
+            <br />
+            <p class="article_bottom">
+              <img class="bottom_1" src="../img/container.articles.vote.png" alt="">
+              <span style="color: red;">10</span>
+              <img class="bottom_2" src="../img/container.articles.comment.png" alt="">
+              <span style="color: #05bcbc;">5</span>
+               ㅣ5분 전ㅣ익명
+            </p>
           </span>
+          <img class="art_img" src="../img/likelion.png" alt="멋사 이미지">
         </div>
         <!--세번째 아티클-->
         <div class="article">
           <span>
             <h4>불닭</h4>
             <span class="article_1">불닭을 낋여오거라</span>
-            <br>
-            <p class="article_bottom">6분 전 ㅣ 익명</p>
+            <br />
+            <p class="article_bottom">
+              <img class="bottom_1" src="../img/container.articles.vote.png" alt="">
+              <span style="color: red;">10</span>
+              <img class="bottom_2" src="../img/container.articles.comment.png" alt="">
+              <span style="color: #05bcbc;">5</span>
+               ㅣ6분 전ㅣ익명
+            </p>
           </span>
+          <img class="art_img" src="../img/likelion.png" alt="멋사 이미지">
         </div>
       </section>
       <!--사이드바 섹션-->
@@ -133,36 +241,60 @@
           <div class="sidebar_hot">
             <p>멋사 13기 합격 썰 푼다 ㅎㅎ</p>
             <span class="sidebar_header">비밀게시판</span>
-            <img id="img_side_hot" src="../img/container.articles.vote.png" alt="">
-            <span class="hot_num">13</span>
-            <img id="img_comment" src="/img/container.articles.comment.png" alt="">
-            <span class="comment_num">10</span>
+            <div>
+              <img
+                id="img_side_hot"
+                src="../img/container.articles.vote.png"
+                alt="따봉 이미지"
+              />
+              <span class="hot_num">13</span>
+              <img
+                id="img_comment"
+                src="../img/container.articles.comment.png"
+                alt="댓글 이미지"
+              />
+              <span class="comment_num">10</span>
+            </div>
           </div>
           <div class="sidebar_hot">
             <p>여자들이 질투하는 여자</p>
-            <p class="sidebar_">로또 당첨 된 여자</p>
             <span class="sidebar_header">비밀게시판</span>
-            <img id="img_side_hot" src="../img/container.articles.vote.png" alt="">
-            <span class="hot_num">25</span>
-            <img id="img_comment" src="/img/container.articles.comment.png" alt="">
-            <span class="comment_num">10</span>
+            <div>
+              <img
+                id="img_side_hot"
+                src="../img/container.articles.vote.png"
+                alt="따봉 이미지"
+              />
+              <span class="hot_num">25</span>
+              <img
+                id="img_comment"
+                src="../img/container.articles.comment.png"
+                alt="댓글 이미지"
+              />
+              <span class="comment_num">10</span>
+            </div>
           </div>
         </div>
-        
+
         <!--핫게 사이드바-->
         <div class="sidebar_hot_section">
           <div class="sidebar_hot_header">
-              <h3>HOT 게시물 <span class="sidebar_bottom">더 보기</span></h3>
+            <h3>HOT 게시물 <span class="sidebar_bottom">더 보기</span></h3>
           </div>
           <div class="sidebar_hot_item">
-              <p>멋사 나 안아.... <span class="sidebar_date">03/30 14:59</span></p>
+            <p>
+              멋사 나 안아.... <span class="sidebar_date">03/30 14:59</span>
+            </p>
           </div>
           <div class="sidebar_hot_item_2">
-              <p>개강을 아는 사람? 너무 무서워<span class="sidebar_date">03/29 15:13</span></p>
+            <p>
+              개강을 아는 사람? 너무 무서워<span class="sidebar_date"
+                >03/29 15:13</span
+              >
+            </p>
           </div>
         </div>
       </aside>
     </div>
-    
   </body>
 </html>

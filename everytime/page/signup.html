@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입 페이지</title>
+    <link rel="stylesheet" href="../css/signup.css" />
+  </head>
+  <body>
+    <form>
+      <h1>에브리타임 회원가입</h1>
+      <span
+        >에브리타임 계정으로 <b>캠퍼스픽, 에브리타임</b>등<br />다양한 대학생
+        서비스를 모두 이용하실 수 있습니다.</span
+      >
+      <p>이름</p>
+      <input type="text" id="name" placeholder="이름을 입력하세요." />
+      <p>닉네임</p>
+      <input type="text" id="nickname" placeholder="닉네임을 입력하세요." />
+      <p>이메일</p>
+      <input type="text" id="email" placeholder="이메일을 입력하세요." />
+
+      <p>비밀번호</p>
+      <input
+        type="password"
+        id="password"
+        placeholder="숫자/문자 조합, 최소 8자 이상"
+      />
+
+      <p>비밀번호 재입력</p>
+      <input
+        type="password"
+        id="pw_confirm"
+        placeholder="비밀번호를 재입력하세요."
+        required
+      />
+      <input
+        type="submit"
+        id="signup"
+        class="signup"
+        value="회원가입"
+        disabled
+      />
+
+    <script src="../js/signup.js"></script>
+  </body>
+</html>
