@@ -6,7 +6,6 @@ body {
 }
 .logo {
   max-width: 270px;
-  height: 100px;
   margin: 100px 0 50px 0;
 }
 form {
@@ -67,6 +66,8 @@ input[type="password"] {
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
+    align-items: center;
+    padding: 0 10%;
   }
 
   #club {
@@ -80,20 +81,20 @@ input[type="password"] {
     white-space: nowrap;
   }
   input[type="text"] {
-    width: 100%;
+    width: 80%;
     height: 25px;
     font-size: 15px;
     padding: 10px;
   }
   input[type="password"] {
-    width: 100%;
+    width: 80%;
     height: 25px;
     font-size: 15px;
     padding: 10px;
   }
   .login {
     display: block;
-    width: 100%;
+    width: 80%;
     box-sizing: border-box;
     font-size: 15px;
     padding: 12px 10px;

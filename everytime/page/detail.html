@@ -183,8 +183,6 @@
                 <img src="../img/article2.jpg" alt="상세 글 2">
                 <img src="../img/article3.jpg" alt="상세 글 3">
                 <img src="../img/article4.jpg" alt="상세 글 4">
-              </div>
-              <div class="second">
                 <img src="../img/article5.jpg" alt="상세 글 5">
                 <img src="../img/article6.jpg" alt="상세 글 6">
               </div>
@@ -208,13 +206,13 @@
               <span class="scrap_num">10</span>
             </div>
             <div class="buttons_wrap">
-              <button class="buttons">
+              <button class="buttons" id="buttons_like">
                 <img 
                 id="buttons_img"
                 src="../img/container.articles.buttons.posvote.png" alt="공감 이미지">
                 <span class="buttons_num">공감</span>
               </button>
-              <button class="buttons">
+              <button class="buttons" id="buttons_scrap">
                 <img 
                 id="buttons_img"
                 src="../img/container.articles.buttons.scrap.png" alt="스크랩 이미지">
@@ -227,14 +225,37 @@
             <div class="comment_line">
                 <img class="comment_img" src="../img/anonymous.profile.png" alt="프사 이미지">
                 <span class="comment_name"><b>익명 1</b></span>
-                <span class="comment_right">대댓글    공감    쪽지    신고</span>
+                <div class="comment_right">
+                  <button class="reply-btn">대댓글</button> <!-- 대댓글 버튼 추가 -->
+                  <span>공감</span>
+                  <span>쪽지</span>
+                  <span>신고</span>
+                </div>
             </div>
             <br>
             <p>덕성 최고의 동아리 멋사...♥️</p>
             <span class="comment_bottom">3분 전</span>
           </div>
+          
+          <!--대댓글 원조 부분-->
+          <div class="comment_sec">
+            <div class="comment_line">
+                <img class="comment_img" src="../img/anonymous.profile.png" alt="프사 이미지">
+                <span class="comment_name"><b>익명 2</b></span>
+                <div class="comment_right">
+                  <span>공감</span>
+                  <span>쪽지</span>
+                  <span>신고</span>
+                </div>
+            </div>
+            <br>
+            <p>ㄹㅇ 인정한다</p>
+            <span class="comment_bottom">4분 전</span>
+          </div>
+          
+          
           <form class="article_bottom">
-            <input type="text" placeholder="댓글을 입력하세요." />
+            <input type="text" placeholder="댓글을 입력하세요." class="comment_1"/>
             <div class="checkbox">
               <input type="checkbox">
               <span>익명</span>
@@ -311,5 +332,6 @@
         </div>
       </aside>
     </div>
+    <script src="../js/detail.js"></script>
   </body>
 </html>

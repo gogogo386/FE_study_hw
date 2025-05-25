@@ -13,6 +13,8 @@ body {
 header {
   border-bottom: 1px solid gray;
   display: flex;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .header_wrap {
@@ -67,6 +69,7 @@ nav {
   border-bottom: 1px solid lightgray;
   padding: 10px;
   overflow: hidden;
+  white-space: nowrap;
 }
 .nav_wrap {
   margin: 0 270px 0 270px;
@@ -97,7 +100,9 @@ nav {
   font-size: 13px;
   margin: 0;
   padding: 0 60px 0 60px;
-  display: inline-block;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
 }
 
 /*섹션 부분*/
@@ -198,6 +203,7 @@ section {
   font-size: 12px;
   color: #a6a6a6;
   padding: 10px 10px 10px 0;
+  margin: 0;
 }
 .art_img {
   display: flex;
@@ -216,6 +222,8 @@ aside {
   background-color: #f9f9f9;
   margin: 0;
   height: fit-content; /*콘텐츠 높이에 맞추기*/
+  overflow: hidden;
+  white-space: nowrap;
 }
 .sidebar_1 {
   margin-bottom: 5px;
@@ -417,14 +425,12 @@ aside h3 {
     background-color: #e6faff;
     border-radius: 15px;
     padding: 10px;
-    width: 90%;
     font-size: 18px;
   }
   .sec_que {
     background-color: #ffecec;
     border-radius: 15px;
     padding: 10px;
-    width: 90%;
     font-size: 18px;
   }
   #img_vote {
